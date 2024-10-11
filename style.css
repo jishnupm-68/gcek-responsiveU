@@ -1,0 +1,281 @@
+body{
+    margin: 0px;
+}
+a:hover{
+    color: orange;
+}
+.social_media{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #203a72;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+.headings{ /*background for social media*/
+    display: inline; 
+    color: white;
+    font-size: 15px;
+    padding: 4px;
+}
+.fa-linkedin-square{
+    padding-right: 10px;
+}
+.fa-facebook{
+    padding-right: 10px;
+}
+/* for mobile screen */
+@media screen and (max-width: 768px){
+    .social_media{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div{
+            display: block;
+           
+        }  
+    }
+}
+
+@media screen and (max-width: 478px){
+    .social_media{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div{
+            visibility: hidden;
+           
+        }  
+    }
+}
+/*styling of social media links end here */
+
+/* styling of gcek emblem and login access starts here */
+
+.emblem-login{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 80px;
+}
+.emblem{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+    img{
+        width: 500px;
+        margin-top: -12px;   
+    }   
+}
+.login{
+    width: 50%; 
+    padding-top: 1.5%;
+    padding-left: 5%;   
+}
+a{
+    text-decoration: none;
+    color: #3b444e;
+    /*color: rgb(30, 28, 28);  */
+}
+a:hover{
+    color: orange;
+}
+
+/* mobile screen for emblem and login of gcek */
+@media screen and (max-width:768px) {
+    .emblem-login{
+        display: block;    
+    } 
+    .emblem{
+        
+        width: 100%;
+        img{
+            width: 100%;
+            margin-top: -12px;   
+        }   
+    }
+    .login{
+        width: 100%; 
+        padding-top: 0px
+        
+    }    
+}
+
+/* styling of gcek emblem and login access end here */
+
+
+/* navigation bar decoration */
+.main_menu{
+   
+    list-style-type: none;  
+    a:hover{
+        color: orange;
+    }   
+}
+.fa-angle-down{
+    padding-left: 2px;
+}
+.main-menu-list{
+    float: left;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#homeList{
+    display: none;
+    background-color: white;
+    margin-left: -25%;
+    margin-right: 0px;
+
+
+}
+
+
+.hiddenNavBar{
+    background-color: #3b444e;
+    width: 100%;
+    display: none;
+   
+    button{
+        line-height: 0.5;
+        background-color: #3b444e;
+        border: none;
+        color: white;
+        font-weight: bolder;  
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main_menu{
+        display: none;
+    }  
+    .hiddenNavBar{
+        margin-top: 4%;
+        display: block;
+        div{
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            button{
+                line-height: 0.4;
+                padding-bottom: 1%;
+               
+            }
+        }
+        
+    }
+    .navbar{
+        justify-content: center;
+        align-items: center;
+        li{
+            float: none ;      
+        }
+    }
+}
+
+/* navigation bar decoration ends here */
+
+/* sliding content styling */
+
+.slider{
+    background: #203a72;
+    height: 40px;
+    padding: 0%;
+    margin: 0%;
+    margin-top: -16px;
+}
+#slide-content{
+    list-style-type: none;
+}
+.sliding-content{
+   
+   margin-left: 20px;
+}
+.slide-content{ 
+    float: left; 
+    a{
+        color: white;
+    }
+}
+.newgif{
+    height: 20px;
+    width: 7%;
+}
+
+/* picture and news */
+
+
+.image{
+    img{
+        width: 100%;
+        height: 53.5%;    
+    }
+    
+}
+
+
+.news{ 
+    background: white;
+    border: 5px solid #0b2c74;
+    width:100%;
+    height: 53.5%;
+    display: flex;
+    color: white;
+    padding-left: 25px;
+    padding-top: 20px;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.top{
+    z-index: 17;
+    background-color: #203a72;
+    width: 107%;
+    height: 14%;
+    margin-top: -5.7%;
+    margin-left: -7.2%;
+    
+    button{
+        padding-top: 3%;
+        height: 100%;
+        background: inherit;
+        color: white;
+        margin: 0px;
+        border-color: none;
+        border: 0px;
+    }
+}
+.content-news{
+    flex-direction: column;
+}
+.news-contents{ 
+    margin: 3%;
+    width: 95%;
+    td{
+        border: 1px solid rgb(172, 170, 170);
+        padding: 2%;
+    }
+}
+.old-news{
+    padding-left: 7%;
+}
+.view-button{
+    color: white;
+    font-size: 12px;
+    border-style: none;
+    margin-top: 65%;
+    margin-left: -70%;
+    
+    margin-bottom: 8%;
+    padding: 1%;
+    
+}
+
+a:hover{
+    color: orange;
+}
+.container_image_news{
+    width: 95%;
+    padding-top: 1%;
+}
